@@ -1,0 +1,358 @@
+/* CSS Document */
+
+/* Crew Styles */
+
+/* Color Palette: Taken from Stak Trek's LCARS OS.
+    #ff9900 - gold
+    #ffcc99 - peach
+    #cc99cc - lavendar
+    #9999ff - light blue
+    #cc6061 - mauve
+    #2d2d30 - grey
+    rgba(53, 54, 59, 0.3) - dark grey
+*/
+
+html, .navbar, body, h1, h2, h3, h4, h5 {
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  font: 400 1.5vw/1.8;
+  /* Bootstrap quirk required to actually make background black. */
+  color: #fff;
+  background: #000;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 1vw;
+  letter-spacing: .5vw;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+  color: #ffcc99 !important;
+}
+
+.navbar-nav li a {
+  letter-spacing: 0.3vw;
+}
+
+.navbar-nav li a:hover {
+  color: #9999ff !important;
+}
+
+.navbar-nav li a:visited {
+  color: #ff9900 !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+
+.navbar-brand:hover {
+  color: #9999ff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* LCARS bars. */
+.bar-1 {
+  float: left;
+  width: 35%; /*add up all the pixels & convert to percentage --- or make one image*/
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-2 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-3 {
+  float: left;
+  width: 10%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-4 {
+  float: left;
+  width: 25%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* LCARS bar colors. */
+.lightBlue {
+  background: #9999ff;
+}
+
+.gold {
+  background: #ff9900;
+}
+
+.lavendar {
+  background: #cc99cc;
+}
+
+.peach {
+  background: #ffcc99;
+}
+
+.mauve {
+  background: #cc6061;
+}
+/* End of LCARS bars. */
+
+.topBars {
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50vw;
+  margin-left: -25vw;
+  font: 300 3vw/1 "Orbitron", sans-serif;
+  text-align: center;
+  color: #cc99cc;
+  animation: credits 60s linear infinite;
+  z-index: -1;
+}
+
+.wrapper:hover {
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+}
+
+.comments {
+  margin-bottom: .05vw;
+  font-size: 3.5vw;
+  color: #ff9900; /*gold*/
+}
+
+.organization {
+  margin-bottom: .05vw;
+  font-size: 2.5vw;
+  color: #cc99cc; /*lavendar*/
+}
+
+.department {
+  margin-bottom: .05vw;
+  font-size: 2vw;
+  color: #cc6061; /*mauve*/
+}
+
+.role {
+  margin-bottom: .1vw;
+  font-size: 1.75vw;
+  color: #9999ff; /*light blue*/
+}
+
+.name {
+  margin-bottom: .05vw;
+  font-size: 3.5vw;
+  color: #ff9900; /*gold*/
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -600%;
+  }
+}
+
+/** media queries **/
+@media (max-width: 1024px) and (min-width: 769px) {
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 415px) {
+  .navbar-brand {
+    font-size: 4vw;
+  }
+
+  .navbar {
+    font-size: 2vw;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 57px;
+  }
+
+  .top-bar {
+    margin-top: 57px;
+  }
+
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 414px) and (min-width: 361px) {
+  .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .button {
+    visibility: hidden;
+  }
+
+  .mobile {
+    margin-top: 15px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .comments {
+    font-size: 7vw;
+  }
+
+  .organization {
+    font-size: 6vw;
+  }
+
+  .department {
+    font-size: 5vw;
+  }
+
+  .role {
+    font-size: 4vw;
+  }
+
+  .name {
+    font-size: 6vw;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .mobile {
+    margin-top: 5px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .comments {
+    font-size: 7vw;
+  }
+
+  .organization {
+    font-size: 6vw;
+  }
+
+  .department {
+    font-size: 5vw;
+  }
+
+  .role {
+    font-size: 4vw;
+  }
+
+  .name {
+    font-size: 6vw;
+  }
+
+
+}

@@ -1,0 +1,625 @@
+/* CSS Document */
+
+/* The Journey Styles */
+
+/* Color Palette: Taken from Stak Trek's LCARS OS.
+    #ff9900 - gold
+    #ffcc99 - peach
+    #cc99cc - lavendar
+    #9999ff - light blue
+    #cc6061 - mauve
+    #2d2d30 - grey
+    rgba(53, 54, 59, 0.3) - dark grey
+*/
+
+html, .navbar, body, h1, h2, h3, h4, h5 {
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    font: 400 1.5vw/1.8;
+    /* Bootstrap quirk required to actually make background black. */
+    background: #000;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 1vw;
+    letter-spacing: .5vw;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #ffcc99 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #9999ff !important;
+}
+
+.navbar-nav li a:visited {
+    color: #ff9900 !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-brand:hover {
+    color: #9999ff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* LCARS bars. */
+.bar-1 {
+  float: left;
+  width: 35%; /*add up all the pixels & convert to percentage --- or make one image*/
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-2 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-3 {
+  float: left;
+  width: 10%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-4 {
+  float: left;
+  width: 25%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* Subtitle LCARS bars. */
+.bar-1a {
+  float: left;
+  width: 35%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5a {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* LCARS bar colors. */
+.lightBlue {
+  background: #9999ff;
+}
+
+.gold {
+  background: #ff9900;
+}
+
+.lavendar {
+  background: #cc99cc;
+}
+
+.peach {
+  background: #ffcc99;
+}
+
+.mauve {
+  background: #cc6061;
+}
+/* End of LCARS bars. */
+
+.glyphicon {
+    color: #9999ff;
+}
+
+.container {
+    padding: 1vw 3vw;
+}
+
+.bg-1 {
+    background: rgba(53, 54, 59, 0.3);
+}
+
+h1, h2 {
+  color: #ff9900;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+    margin: 1vw 0 2.75vw 0;
+    letter-spacing: .6vw;      
+    font-size: 3vw;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+h4 {
+    color: #9999ff;
+    text-align: left;
+    letter-spacing: .6vw;
+}
+
+p, ul, li {
+    color: #ffcc99;
+    text-align: left;
+    letter-spacing: .3vw;
+}
+
+p.tagline {
+    color: #cc99cc;
+    letter-spacing: .6vw !important; 
+    text-align: center;
+}
+
+.articleText {
+    font-family: Arial;
+    font-size: 1.25vw;
+}
+
+p a, ul li a{
+    color: #ff9900 !important;
+    text-decoration: none !important;
+}
+
+p a:hover {
+    text-decoration: none !important;
+    color: #9999ff !important;
+}
+
+ul li a:hover {
+    text-decoration: none !important;
+    color: #9999ff !important;
+}
+
+footer p{
+    padding: 3.2vw;
+    color: #cc99cc;
+    text-align: center;
+}
+
+footer p a{
+    color: #ffcc99 !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9999ff !important;
+    text-decoration: none !important;
+}
+
+footer a:visited {
+    color: #ff9900;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+#emailIcon:hover {
+  color: #9999ff;
+  transition: color 1s, background 3s;
+}
+
+#twitterIcon:hover {
+  color: #cc6061;
+  transition: color 1s, background 3s;
+}
+
+
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+  line-height: 4vw;
+  text-align: center;
+  background: #2d2d30;
+  border-radius: 2.5vw;
+  border: 1vw double #9999ff;
+  color: #ff9900;
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #9999ff;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #90acc7;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 99999;
+}
+
+/** timeline content **/
+.tl-heading h4 {
+    margin: 0;
+    color: #cc6061;
+    font-weight: bold;
+}
+
+.tl-heading p {
+  color: #cc6061;
+}
+
+.tl-body p, .tl-body ul {
+    margin-bottom: 0;
+}
+
+.tl-body > p + p {
+    margin-top: 5px;
+}
+
+.tl-body p{
+    font-size: 1.5vw;
+    text-align: left;
+    color: #cc6061;
+    font-family: Arial;
+}
+
+.tl-body> ul li {
+    font-family: Arial;
+    list-style-type: none;
+    color: #cc6061;
+}
+
+#boardCutting img:hover {
+  box-shadow: .5vw .5vw .7vw #9999ff, -.5vw -.5vw .7vw #9999ff, -.5vw .5vw .7vw #9999ff, .5vw -.5vw .7vw #9999ff;
+  transition: box-shadow 1s, background 3s;
+}
+
+img {
+    border: 0; max-width: 100%;
+}
+
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 { 
+    font-size: 1.8em; 
+  }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { 
+    width: 140px; 
+  }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+  }
+
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+/* Tooltip is in journey-tooltip.js file */
+h4 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 415px) {
+  .navbar-brand {
+    font-size: 4vw;
+  }
+
+  .navbar {
+    font-size: 2vw;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 57px;
+  }
+
+  .top-bar {
+    margin-top: 57px;
+  }
+
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 414px) and (min-width: 361px) {
+  .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .mobile {
+    margin-top: 15px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .articleText {
+    font-size: 18px;
+  }
+
+  .tl-body p {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .mobile {
+    margin-top: 5px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .articleText {
+    font-size: 14px;
+  }
+
+  .tl-body p {
+    font-size: 18px;
+  }
+
+}
+

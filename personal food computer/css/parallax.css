@@ -1,0 +1,13 @@
+/* CSS Document */
+
+/* Parallax Styles */
+.parallax {
+
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+}

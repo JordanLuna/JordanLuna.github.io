@@ -1,0 +1,562 @@
+/* CSS Document */
+
+/* Homepage, Sustainability & Nutrition Styles */
+
+/* Color Palette: Taken from Stak Trek's LCARS OS.
+    #ff9900 - gold
+    #ffcc99 - peach
+    #cc99cc - lavendar
+    #9999ff - light blue
+    #cc6061 - mauve
+    #2d2d30 - grey
+    rgba(53, 54, 59, 0.3) - dark grey
+*/
+
+html, .navbar, body, h1, h2, h3, h4 {
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    font: 400 1.5vw/1.8;
+    /* Bootstrap quirk required to actually make background black. */
+    color: #fff;
+    background-color: #000;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 1vw;
+    letter-spacing: .5vw;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #ffcc99 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #9999ff !important;
+}
+
+.navbar-nav li a:visited {
+    color: #ff9900 !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-brand:hover {
+    color: #9999ff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* LCARS bars. */
+.bar-1 {
+  float: left;
+  width: 35%; /*add up all the pixels & convert to percentage --- or make one image*/
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-2 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-3 {
+  float: left;
+  width: 10%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-4 {
+  float: left;
+  width: 25%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* Subtitle LCARS bars. */
+.bar-1a {
+  float: left;
+  width: 35%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5a {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* LCARS bar colors. */
+.lightBlue {
+  background: #9999ff;
+}
+
+.gold {
+  background: #ff9900;
+}
+
+.lavendar {
+  background: #cc99cc;
+}
+
+.peach {
+  background: #ffcc99;
+}
+
+.mauve {
+  background: #cc6061;
+}
+/* End of LCARS bars. */
+
+.carousel-inner img {
+    width: auto;
+    margin: auto;
+}
+
+.carousel-caption a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.carousel-caption a h2:hover {
+    color: #cc99cc;
+    text-decoration: none;
+}
+
+.carousel-caption a h1:hover {
+    color: #cc99cc;
+    text-decoration: none;
+}
+
+.button {
+    width: 20%;
+    line-height: 4vw;
+    text-align: center;
+    background: #2d2d30;
+    border-radius: 2.5vw;
+    border: 1vw double #9999ff;
+    transition: box-shadow 1s, background 3s;
+    cursor: pointer;
+    margin-top: 10vw;
+}
+
+.button h2 {
+    color: #ff9900;
+}
+
+.button:hover {
+    border: 1vw double #ff9900;
+    box-shadow: .5vw .5vw .7vw #9999ff, -.5vw -.5vw .7vw #9999ff, -.5vw .5vw .7vw #9999ff, .5vw -.5vw .7vw #9999ff;
+    transition: box-shadow 1s, background 3s;
+}
+
+.button h2:hover {
+    color: #9999ff !important;
+}
+
+a .button h2 :hover {
+    color: #9999ff !important;
+}
+
+.glyphicon {
+    color: #9999ff;
+}
+
+.container {
+    padding: 1vw 3vw;
+}
+
+.bg-1 {
+    background: rgba(53, 54, 59, 0.3);
+}
+
+h1, h2 {
+  color: #ff9900;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+summary {
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+    padding-top: 1.9vw;
+    color: #9999ff;
+    font-size: 300%;
+}
+
+blockquote {
+  color: #cc99cc;
+  margin-left: 3vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.definition {
+  font-family: Arial;
+  font-size: 1.75vw;
+}
+
+h3 {
+    margin: 1vw 0 2.75vw 0;
+    letter-spacing: .6vw;      
+    font-size: 3vw;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+h4 {
+    color: #9999ff;
+    text-align: left;
+    letter-spacing: .6vw;
+}
+
+p, ul, li {
+    color: #ffcc99;
+    text-align: left;
+    letter-spacing: .3vw;
+}
+
+p.tagline {
+    color: #cc99cc;
+    letter-spacing: .6vw; 
+    text-align: center;
+}
+
+.articleText {
+    font-family: Arial;
+    font-size: 1.25vw;
+}
+
+p a, ul li a{
+    color: #ff9900 !important;
+    text-decoration: none !important;
+}
+
+p a:hover {
+    text-decoration: none !important;
+    color: #9999ff !important;
+}
+
+ul li a:hover {
+    text-decoration: none !important;
+    color: #9999ff !important;
+}
+
+#googleMap {
+    width: 100%;
+    height: 40vw;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}  
+
+footer p{
+    padding: 3.2vw;
+    color: #cc99cc;
+    text-align: center;
+}
+
+footer p a{
+    color: #ffcc99 !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9999ff !important;
+    text-decoration: none !important;
+}
+
+footer a:visited {
+    color: #ff9900;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+#mitSingleUnitPFC img, #miniPFC img {
+    display: inline-block;
+    float: right;/*Wraps around the paragraph tag, floated elements are ignored when calculating the auto height of a parent
+     element*/
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: .6vw;
+    margin-left: .5vw;
+}
+
+#digFarm img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: .6vw;
+}
+
+#mitSingleUnitPFC img:hover, #miniPFC img:hover, #digFarm img:hover {
+  box-shadow: .5vw .5vw .7vw #9999ff, -.5vw -.5vw .7vw #9999ff, -.5vw .5vw .7vw #9999ff, .5vw -.5vw .7vw #9999ff;
+  transition: box-shadow 1s, background 3s;
+}
+
+#emailIcon {
+  color: #333;
+}
+
+#emailIcon:hover {
+  color: #9999ff;
+  transition: color 1s, background 3s;
+}
+
+#twitterIcon {
+  color: #333;
+}
+
+#twitterIcon:hover {
+  color: #cc6061;
+  transition: color 1s, background 3s;
+}
+
+.grayText {
+  color: #333;
+}
+
+/** media queries **/
+@media (max-width: 1024px) and (min-width: 769px) {
+  .carousel-inner .item img {
+    height: 484px;
+    width: 808px;
+  }
+
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 415px) {
+  .navbar-brand {
+    font-size: 4vw;
+  }
+
+  .navbar {
+    font-size: 2vw;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 57px;
+  }
+
+  .top-bar {
+    margin-top: 57px;
+  }
+
+  .carousel-inner .item img {
+    height: 460px;
+    width: 689px;
+  }
+
+  .mobile {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 414px) and (min-width: 361px) {
+  .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .carousel-inner .item img {
+    height: 248px;
+    width: 371px;
+  }
+
+  .button {
+    visibility: hidden;
+  }
+
+  .mobile {
+    margin-top: 15px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .mobile-slides2-4 {
+    top: 30%;
+  }
+
+  .articleText {
+    font-size: 18px;
+  }
+
+  #mitSingleUnitPFC img {
+    margin-bottom: 5px;
+  }
+
+  blockquote {
+    font-size: 18px;
+  }
+
+  .definition {
+    font-size: 18px;
+  }
+
+  #miniPFC img {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    height: 25px;
+  }
+
+  .bar-1, .bar-5 {
+    margin-top: 32px;
+  }
+
+  .top-bar {
+    margin-top: 32px;
+  }
+
+  .carousel-inner .item img {
+    height: 192px;
+    width: 287px;
+  }
+
+  .button {
+    visibility: hidden;
+  }
+
+  .mobile {
+    margin-top: 5px;
+  }
+
+  .mobile h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  .mobile h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .mobile-slides2-4 {
+    top: 26%;
+  }
+
+  .articleText {
+    font-size: 14px;
+  }
+
+  #mitSingleUnitPFC img {
+    margin-bottom: 1px;
+  }
+
+  blockquote {
+    font-size: 18px;
+  }
+
+  .definition {
+    font-size: 18px;
+  }
+
+  #miniPFC img {
+    margin-bottom: 5px;
+  }
+
+}
+

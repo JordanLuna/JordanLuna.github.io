@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Earth Riders">
+            <meta name="keywords" content="Earth Riders">
+            <meta name="author" content="Jordan Luna">
+            <meta http-equiv="refresh" content="1500">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8" />
+            <title>Earth Riders</title>
+
+            <!--style sheets -->
+            <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
+            <link rel="stylesheet" href="../css/LightBoxstyles.css" type="text/css"/>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+            <!--form styles-->
+            <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+            <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">   
+            <link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+            <link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+            <link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+            <link rel="stylesheet" href="css/util.css" type="text/css">            
+                        
+            <!--favicon  sizes="16x16 32x32"-->
+            <link rel="icon" type="../image/png" href="#">
+
+            <!--scripts-->
+            <script src="../js/navbar.js" type="text/javascript"></script>
+            <script src="../js/jquery-3.2.1.min.js"></script>
+            <script src="../js/jquery.datepicker.js"></script>
+            <script src="../js/jquery.datepicker.min.js"></script>
+            <script src="../js/script.js"></script>
+            <script src="../js/parallaxVideo.js"></script>
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/slideShow.js"></script>
+            <script src="../js/SocialMedia.js" type="text/javascript"></script>
+
+
+
+            <!--  Below is the IE shim that works with all versions of IE-->
+            <!--[if lt IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+            <!--- Google Analytics Code Tracking  & ID: UA-UA-xxxxxxxxxx  Sept 2017 LunaJ   --->
+            
+        </head>
+	<body>
+        <!-- sticky top nav bar -->
+        <div class="topnav" id="myTopnav">            
+            <a href="../index.html">Home</a>
+            <a href="join.html">Join the Club</a>
+            <a href="forums.html">Forums</a>
+            <a href="merch.html">Merchandise</a>
+            <a href="sponsor.html">Sponsors</a>
+            <a href="about.html"><span class="active-page">About<span></a>
+            <a href="contact.html">Contact</a>
+            <span class="navIcon"><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></span>
+        </div>        
+        <!-- <div id="logo">
+            <a href="index.html"><img src="images/erlogo.png" alt="Earth Riders Logo" itemprop="contentUrl"/>
+            </a>
+        </div>
+ -->
+        <!-- parallax code -->          
+         <div class="bgimg-7" style="height: 100%;"></div> <!--flexbox here?-->
+
+         <div class="row">
+          <div class="column">
+            <img src="../images/snowyMountainBiking.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/couplesCycle.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/SportSpeedCycling.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/snowyMountainBiking.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="../images/snowyMountainBiking.jpg" style="width:100%; height: 100%; margin-bottom: -170px;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="../images/couplesCycle.jpg" style="width:100%; height: 100%; margin-bottom: -170px;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="../images/SportSpeedCycling.jpg" style="width:100%; height: 100%; margin-bottom: -170px;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="../images/snowyMountainBiking.jpg" style="width:100% margin-bottom: -170px;">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="../images/snowyMountainBiking.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/couplesCycle.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/SportSpeedCycling.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/snowyMountainBiking.jpg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+          </div>
+        </div>
+
+        <footer>
+            <div class="navbarBottom">
+                <a href="about.html" itemprop="url">About Us</a>
+                <a href="contact.html" itemprop="url">Contact Us</a>
+                <div class="copyrightIndex">
+                    <p>All content © <span itemprop="copyrightYear">2077</span> <span itemprop="name">Earth Riders</span></p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+    </body>
+    </html>

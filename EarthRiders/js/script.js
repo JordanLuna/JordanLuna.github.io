@@ -91,7 +91,7 @@ $(".instagram").hover(function () {
 });
 
 
-//jQuery for back to top button
+//jQuery for back to top button courtsey https://codepen.io/desirecode/pen/MJPJqV
 
 $(document).ready(function(){ 
     $(window).scroll(function(){ 

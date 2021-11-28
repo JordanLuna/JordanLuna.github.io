@@ -287,8 +287,51 @@
 
 <!-- Add Google Maps -->
 		<div id="googleMap"></div>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
+
+		<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+	  	<iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+	    style="border:0" allowfullscreen></iframe>
+	</div>
+
+		 <!-- <iframe src="https://goo.gl/maps/C5mG9Rnuftj9aH4v8" title="description"></iframe>  -->
+
+		<!-- <script>
+			function myMap() {
+			var mapProp= {
+			  center:new google.maps.LatLng(38.9822,-94.6708),
+			  zoom:5,
+			};
+			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+		</script>
+
+<script src="https://goo.gl/maps/C5mG9Rnuftj9aH4v8"></script> -->
+
+		<!-- <script src="https://maps.googleapis.com/maps/api/staticmap?center=38.9822%2c%2094.6708&zoom=12&size=400x400&key=AIzaSyAiazqGhiwtCZ4pOXmqX4lAsRxp1szBgv0"></script> -->
+
+		<!-- <script src="https://www.google.com/maps/embed/v1/MAP_MODE?key=&parameters"></script> -->
+
+		<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+		<!-- <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Kansas
+        const Kansas = { lat: 38.9822, lng: -94.6708 };
+        // The map, centered at Kansas
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: Kansas,
+        });
+        // The marker, positioned at Kansas
+        const marker = new google.maps.Marker({
+          position: Kansas,
+          map: map,
+        });
+      }
+    </script> -->
+
+		<!-- <script>
 			var myCenter = new google.maps.LatLng(38.9822, -94.6708);
 
 				function initialize() {
@@ -310,7 +353,7 @@
 				}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
+		</script> -->
 
 <!-- Footer -->
 		<footer class="text-center">
@@ -344,5 +387,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/modernizr.custom.05819.js"></script>
 		<script src="js/parallax.js"></script>
+
+
 	</body>
 </html>

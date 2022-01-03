@@ -122,16 +122,26 @@ a {
   color: #000;
 }
 .caption span.border {
-    background-color:#111;
-
+    background:#111;
     color: #fff;
+    /* border: red 3px solid; */
+    box-shadow: 25px #000;
     font-size: 25px;
+    line-height: 3em;
     letter-spacing: 10px;
-    padding: 1vw;
     }
 
-.border{
+    /* .caption span.border{
+        background: none;
+       
+   } */
 
+
+.border{
+    border-radius: 15%;
+    padding: 1vw;
+    text-shadow: 2px 2px #000;
+    font-weight: bold;   
 }
 
 h1{
@@ -140,6 +150,7 @@ h1{
     font: 20px "Lato", sans-serif;
     color: #ddd;
     padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 h3 {
     letter-spacing: 5px;
@@ -517,7 +528,7 @@ position:absolute;
 
 #title {
 backface-visibility:hidden;
-left:0;
+left:1vh;
 perspective:1000;
 position:fixed;
 width:100%;
@@ -647,6 +658,10 @@ h2 {
         overflow: hidden;
         margin-left: 22%;
         list-style-position: inside; /*becasue IE messes with the inside/outside-ness of the bullets*/
+    }
+    .caption span.border{
+         background: none;
+        
     }
 
 /*navbar media query for collapsed navbar version*/
@@ -1034,10 +1049,10 @@ footer{
         width: 49vw;
     }
     
-/*calendar styles    http://www.jqueryscript.net/time-clock/Pretty-jQuery-Date-Picker-Monthly-Calendar-Plugin.html  */
     .a, .a:visited {
-        color: #176bb8;
+        color: #0a4379;
         text-decoration: none;
+        border: 3px solid red;
     }
     .a:hover {
         text-decoration: underline;

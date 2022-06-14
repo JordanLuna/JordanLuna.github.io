@@ -1,0 +1,154 @@
+
+/*  50's Diner Project copy 'got grid' trial
+	Author: Jordan Luna
+	Date:03 Jan 2022
+	Filename: styles copy.css
+    GA: Tracking ID UA-xxxxxxxxxxxx @charset "utf-8";
+
+*/
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+/* Main content */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+    list-style-position: inside; /*becsue IE*/
+    text-size-adjust: 100%;
+    background-color:#319394;
+    /* text-decoration: none; */
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 1em;
+  text-align: center;
+}
+
+h1{
+  font-family: "Hamburger";
+  color: #EE8126;
+  text-shadow:  #FFF2C5 1px 2px;
+  font-size: 7em;
+}
+
+@font-face {
+  font-family: "Hamburger";
+  src: url(../fonts/HamburgerHeavenNF.ttf);
+}
+
+.glow {
+  font-size: 80px;
+  color: #EE8126;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e1f87c, 0 0 40px #e1f87c, 0 0 50px #F54327, 0 0 60px #F54327, 0 0 70px #F54327, 0 0 80px #F54327;
+  }
+}
+
+.neon{  
+  width:219px ;
+  height:230px;
+  border-radius: 10%;
+  background: #fff; 
+  box-shadow: 0 0 100px #e66800;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+/* .neon:hover{
+  color: #111; 
+  background: #F54327; 
+  box-shadow: 0 0 100px #e66800;
+} */
+
+@-webkit-keyframes neon {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
+  }
+  
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #e1f87c, 0 0 40px #e1f87c, 0 0 50px #F54327, 0 0 60px #F54327, 0 0 70px #F54327, 0 0 80px #F54327;
+  }
+}
+
+.leftSideMenu {
+  width: 13rem;
+  z-index: 1;
+  top: 10rem;
+  overflow-x: hidden;
+  padding: 1em;    
+  font-size: 3em;
+  padding-top: .5em;
+}
+
+  .rightSideMenu {
+    width: 14rem;
+    z-index: 1;
+    top: 8rem;
+    overflow-x: hidden;
+    padding: 1em;    
+    font-size: 2.5em;
+    padding-top: .5em;
+  }
+
+  a{
+    text-decoration: none;
+    color: #EE8126;
+    text-shadow:  #FFF2C5 1px 2px;
+    font-family: "Hamburger";
+  }
+
+  a:hover {
+    color: #e5f086;
+    text-shadow: 0 0 5px rgb(102, 97, 97), 0 0 10px rgb(150, 144, 144), 0 0 10px #e66800,
+    0 0 15px #e66800, 0 0 15px #e66800, 0 0 15px #e66800, 0 0 20px #e66800;
+  }
+  
+  /* #MenuItems path:nth-child(1){
+    stroke-dasharray: 70px;
+  }
+  #MenuItems path:nth-child(2){
+
+  }
+  #MenuItems path:nth-child(3){
+    
+  }
+  #MenuItems path:nth-child(4){
+    
+  }
+  #MenuItems path:nth-child(5){
+    
+  }
+  #MenuItems path:nth-child(6){
+    
+  } */
+
+  /*svg{
+     white-space: nowrap;
+    overflow: hidden; 
+    width: 30em;
+    animation: textDraw 4s steps(60, end);
+  }
+
+  @keyframes textDraw {
+    0%{}
+    50%{}
+    100%{}
+    }
+
+  /* @keyframes type{ 
+    from { width: 0; } 
+  }  */

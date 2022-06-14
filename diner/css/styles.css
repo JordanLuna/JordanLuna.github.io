@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*  50's Diner Project
+	Author: Jordan Luna
+	Date:03 Jan 2022
+	Filename: styles.css
+    GA: Tracking ID UA-xxxxxxxxxxxx
+*/
+
+/*reset for IE measurement shenanigans*/
+* { 
+  margin: 0;
+  padding: 0;
+}
+/* Main content */
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    overflow-y: visible;
+    overflow-x: hidden;
+    list-style-position: inside; /*becsue IE*/
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background-color:#319394;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: "Hamburger";
+    src: url(../fonts/HamburgerHeavenNF.ttf);
+}
+
+h1{
+    font-family: "Hamburger";
+    color: #EE8126;
+    text-shadow:  #FFF2C5 1px 2px;
+    font-size: 7em;
+}
+
+h2{
+    font-family: "Hamburger";
+    color: #EE8126;
+    text-shadow:  #FFF2C5 1px 2px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.glow {
+    font-size: 80px;
+    color: #EE8126;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  /* p{
+     */
+    /* color: #EE8126; 
+    font-family: "Times New Roman";
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: type 4s steps(60, end);
+    border: solid 3px red; 
+  }  */
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  }
+/* original code that works 
+
+  p{
+    color: Pink; 
+    font-family: "Hamburger";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  }  */
+
+
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #e1f87c, 0 0 40px #e1f87c, 0 0 50px #F54327, 0 0 60px #F54327, 0 0 70px #F54327, 0 0 80px #F54327;
+    }
+}
+
+.inset {
+    color: #e66800(10,60,150, 0.8);
+    text-shadow: 3px 4px 6px #F54327, 0 0 0 #000, 1px 4px 6px #def;
+    }
+
+  #sidenav {
+    width: 13rem;
+    position: fixed;
+    z-index: 1;
+    top: 10rem;
+    left: 5rem;
+    overflow-x: hidden;
+    padding: 8px 0;
+    font-family: "Hamburger";
+    color: #EE8126;
+    text-shadow:  #FFF2C5 1px 2px;
+    }
+
+#sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 3em;
+    color: #e66800;   
+
+}
+a:hover {
+    color: #319394;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e66800,
+    0 0 15px #e66800, 0 0 15px #e66800, 0 0 15px #e66800, 0 0 20px #e66800;
+    }
+
+.main {
+    margin-left: 140px; /*Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }

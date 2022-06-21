@@ -1,9 +1,14 @@
+import { useState } from "react";
 
+const User = ({userName, tweet}) => {
 
-function User(){
-return(
-    <div>My First Component</div>
-);
+    return (
+        <div>
+            <h2>{userName}</h2>
+            <p>{tweet}</p>
+        </div>
+        
+    );
 
 }
 

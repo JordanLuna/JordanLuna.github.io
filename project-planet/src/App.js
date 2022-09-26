@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import User from './User';
-import React, { useState } from 'react';
-import Calendar from 'react-calendar'; 
+ 
 
 function App() {
   return (

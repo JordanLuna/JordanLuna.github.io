@@ -124,18 +124,36 @@ a {
 .caption span.border {
     background:#111;
     color: #fff;
-    /* border: red 3px solid; */
     box-shadow: 25px #000;
-    font-size: 25px;
+    font-size: 3.5em;
     line-height: 3em;
     letter-spacing: 10px;
     }
 
-    /* .caption span.border{
-        background: none;
-       
-   } */
-
+.waviy span { /*https://alvarotrigo.com/blog/css-text-animations/*/
+    font: 2em "Lato", sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    opacity: 200%;
+    box-shadow: 25px #000;
+    font-size: 4em;
+    line-height: 3em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    animation: waviy 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+}
+@keyframes waviy {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-20px)
+    }
+}
 
 .border{
     border-radius: 15%;
@@ -235,10 +253,7 @@ h5{
     padding: 1vw 0;
     text-align:left;
 }
-#calendar{
-    max-width: 600px;
-    margin: auto;    
-}
+
 /*top sticky nav bar*/
 .navbar {
     /*overflow: hidden;*/
@@ -257,6 +272,15 @@ h5{
 }
 .navbarBottom a.active-page{ /*navbar colored breadcrumbs*/
     color: lightblue;
+}
+
+.navbarBottom a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.border a:hover{
+    color: rgb(97, 93, 93);
 }
 
 /* Links inside the navbar*/ 
@@ -566,7 +590,7 @@ h1, h2 {
   line-height: 20px
 }
 h1 {
-    color: rgba(0,0,0,.8);
+    color: white;
 }
 
 h2 {
@@ -747,7 +771,7 @@ h1 {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    margin-top: 1vw;
+    margin-top: .5vw;
     margin-left: 2.75vw;
     padding: 1vw;
     text-decoration: none;
@@ -854,7 +878,7 @@ footer{
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: .3rem;
     text-align: center;
     background-color: #333;
     color: #fff;

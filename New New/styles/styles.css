@@ -867,6 +867,10 @@ footer .copyright{
 }
 
 /*Cart Page*/
+#cart {
+    overflow-x: auto;
+}
+
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -979,10 +983,7 @@ footer .copyright{
 }
 
 
-
-
 /*Media Query*/
-
 @media (max-width: 799px){
     .section-p1 {
         padding: 40px 40px;
@@ -1091,8 +1092,6 @@ footer .copyright{
         width: 50%;
     }
 
-
-
 }
 
 @media (max-width:477px) {
@@ -1198,7 +1197,6 @@ footer .copyright{
     }
 
     /*about page*/
-
     #about-head {
         flex-direction: column;
     }
@@ -1240,6 +1238,19 @@ footer .copyright{
         margin-bottom: 30px;
     }
 
+    /*cart page*/
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #coupon {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 

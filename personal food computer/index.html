@@ -5,15 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="w3Schools, Jordan Luna & Melanie Garvey">
-        <meta name="description" content="Personal Food Computer | MIT | Open Agriculture | Home Page | Caleb Harper | OpenAg | JCCC | Johnson County Community College | DIY | Build | Gardening | Indoor Garden | Urban Farm | Farming | Home Farming | Rural Farming | Chronicles | PFC | Fresh Food | ">        
+        <meta name="description" content="Personal Food Computer | MIT | Open Agriculture | Caleb Harper | OpenAg | JCCC | Johnson County Community College | Gardening | Indoor Garden | Urban Farm | Home Farming | Rural Farming | PFC | Fresh Food | ">        
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/parallax.css" rel="stylesheet">
 		<link href="css/heroslidefix.css" rel="stylesheet">
-		<link href="css/fontawesomefix.css" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+		<!-- <link href="css/fontawesomefix.css" rel="stylesheet"> -->
         <!--favicon-->
         <link rel="shortcut icon" href="images/StatTrek-SideView-crop.png">
         <!-- Universal Tracking Code Script -->
@@ -288,82 +290,17 @@
 		</div>
 
 <!-- Add Google Maps -->
-		<div id="googleMap"></div>
+		<div id="googleMap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.008365791839!2d-94.73281248468989!3d38.923786279566656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0eb6483e1e811%3A0x448b22c3a320464f!2sJohnson%20County%20Community%20College!5e0!3m2!1sen!2sus!4v1674245931527!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
 
-		<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-	  	<iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-	    style="border:0" allowfullscreen></iframe>
-	</div>
-
-		 <!-- <iframe src="https://goo.gl/maps/C5mG9Rnuftj9aH4v8" title="description"></iframe>  -->
-
-		<!-- <script>
-			function myMap() {
-			var mapProp= {
-			  center:new google.maps.LatLng(38.9822,-94.6708),
-			  zoom:5,
-			};
-			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-			}
-		</script>
-
-<script src="https://goo.gl/maps/C5mG9Rnuftj9aH4v8"></script> -->
-
-		<!-- <script src="https://maps.googleapis.com/maps/api/staticmap?center=38.9822%2c%2094.6708&zoom=12&size=400x400&key=AIzaSyAiazqGhiwtCZ4pOXmqX4lAsRxp1szBgv0"></script> -->
-
-		<!-- <script src="https://www.google.com/maps/embed/v1/MAP_MODE?key=&parameters"></script> -->
-
-		<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
-
-		<!-- <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Kansas
-        const Kansas = { lat: 38.9822, lng: -94.6708 };
-        // The map, centered at Kansas
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: Kansas,
-        });
-        // The marker, positioned at Kansas
-        const marker = new google.maps.Marker({
-          position: Kansas,
-          map: map,
-        });
-      }
-    </script> -->
-
-		<!-- <script>
-			var myCenter = new google.maps.LatLng(38.9822, -94.6708);
-
-				function initialize() {
-					var mapProp = {
-						center:myCenter,
-						zoom:12,
-						scrollwheel:false,
-						draggable:false,
-						mapTypeId:google.maps.MapTypeId.ROADMAP
-					};
-
-					var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-					var marker = new google.maps.Marker({
-						position:myCenter,
-					});
-
-					marker.setMap(map);
-				}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script> -->
-
-<!-- Footer -->
+	<!-- Footer -->
 		<footer class="text-center">
-			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+			<p>Back to Top</p>
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Back to Top">
 				<span class="glyphicon glyphicon-chevron-up"></span>
 			</a>
-			<br>
-			<br>
+			
 			<p>Bootstrap Theme Made By:<br>
 				<a href="http://www.w3schools.com" title="Visit w3schools">w3Schools</a><br>
 				<a href=" " title="Visit Jordan Luna's Portfolio">Jordan Luna</a><br>
@@ -380,7 +317,7 @@
 	        </script>
 	    </div>
 
-<!-- Parallax -->
+	<!-- Parallax -->
 		<div class="parallax">
 			<canvas></canvas>
 		</div>

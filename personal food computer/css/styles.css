@@ -37,6 +37,7 @@ body {
 
 .navbar-nav li a:hover {
     color: #9999ff !important;
+    transition: .3s;
 }
 
 .navbar-nav li a:visited {
@@ -177,7 +178,7 @@ body {
 .button:hover {
     border: 1vw double #ff9900;
     box-shadow: .5vw .5vw .7vw #9999ff, -.5vw -.5vw .7vw #9999ff, -.5vw .5vw .7vw #9999ff, .5vw -.5vw .7vw #9999ff;
-    transition: box-shadow 1s, background 3s;
+    transition: box-shadow 1s, 3s;
 }
 
 .button h2:hover {
@@ -190,6 +191,12 @@ a .button h2 :hover {
 
 .glyphicon {
     color: #9999ff;
+    font-size: 4vh;
+}
+
+.up-arrow span:hover{
+  color: #cc6061;
+  transition: ease .7s;
 }
 
 .container {
@@ -214,6 +221,12 @@ h2 {
 
 summary {
   outline: none;
+}
+
+summary h3:hover{
+  color: #9999ff;
+  transition: .2s;
+  cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -282,9 +295,10 @@ ul li a:hover {
 
 #googleMap {
     width: 100%;
+    padding-left: 30%;
     height: 40vw;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
 }
 
 .map-container-2{
@@ -303,7 +317,7 @@ ul li a:hover {
 }
 
 footer p{
-    padding: 3.2vw;
+    padding-top: 15px;
     color: #cc99cc;
     text-align: center;
 }
@@ -348,25 +362,25 @@ textarea {
 
 #mitSingleUnitPFC img:hover, #miniPFC img:hover, #digFarm img:hover {
   box-shadow: .5vw .5vw .7vw #9999ff, -.5vw -.5vw .7vw #9999ff, -.5vw .5vw .7vw #9999ff, .5vw -.5vw .7vw #9999ff;
-  transition: box-shadow 1s, background 3s;
+  transition: box-shadow 1s, 3s;
 }
 
 #emailIcon {
-  color: #333;
+  color: #9999ff;
 }
 
 #emailIcon:hover {
-  color: #9999ff;
-  transition: color 1s, background 3s;
+  color: #cc6061;
+  transition: 1s;
 }
 
 #twitterIcon {
-  color: #333;
+  color: #9999ff;
 }
 
 #twitterIcon:hover {
   color: #cc6061;
-  transition: color 1s, background 3s;
+  transition: 1s;
 }
 
 .grayText {

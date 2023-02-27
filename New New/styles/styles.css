@@ -139,11 +139,11 @@ body{
 
 /*home page*/
 #hero{
-    background-image: url("../img/hero4.png");
+    background-image: url("../img/map_of_hudson_il.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: top 25% right 0;
+    background-position: top 25% left 25%;
     padding: 0 80px;
     display: flex;
     flex-direction: column;

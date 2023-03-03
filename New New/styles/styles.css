@@ -190,7 +190,13 @@ body{
     margin: 15px 0;
 }
 #feature  .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    /* box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.4); */
+    box-shadow: 10px 10px 54px rgba(28, 148, 200, .5);
+}
+
+div.fe-box  a:hover{
+    box-shadow: 10px 10px 54px rgba(28, 148, 200, .5);
+    margin: 0; 
 }
 
 #feature  .fe-box img{
@@ -678,6 +684,7 @@ footer .copyright{
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-radius: 25px;
 }
 
 #blog .blog-details{
@@ -713,9 +720,9 @@ footer .copyright{
 
  #blog .blog-box h1{
     position: absolute;
-    top: -40px;
+    top: -45px;
     left: 0;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
     color: #c9cbce;
     z-index: -9;

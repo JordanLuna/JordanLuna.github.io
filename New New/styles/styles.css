@@ -173,6 +173,22 @@ body{
 
 }
 
+.blogButton{
+    background-image: url(../img/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+.blogButton:hover{
+    cursor: pointer;
+}
+
 #feature{
     align-items: center;
     display: flex;
@@ -202,7 +218,6 @@ div.fe-box  a:hover{
 #feature  .fe-box img{
     width: 100%;
     margin-bottom: 10px;
-
 }
 
 #feature  .fe-box h6{
@@ -236,6 +251,11 @@ div.fe-box  a:hover{
 
 #product1{
     text-align: center;
+}
+
+#product1 h1{
+
+    color: #1C94C8;
 }
 
 #product1 .pro-container{
@@ -318,7 +338,7 @@ div.fe-box  a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../img/banner/b2.jpg");
+    background-image: url("../img/banner/vineyard-banner.png");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -343,7 +363,7 @@ div.fe-box  a:hover{
 }
 
 #banner button:hover{
-    background-color: #088178;
+    background-color: #1C94C8;
     color: #fff;
 }
 
@@ -352,7 +372,7 @@ div.fe-box  a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(../img/banner/b17.jpg);
+    background-image: url("../img/banner/StPaddysDayBanner.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -361,13 +381,21 @@ div.fe-box  a:hover{
 }
 
 #sm-banner .banner-box2{
-    background-image: url(../img/banner/b10.jpg);
+    background-image: url("../img/banner/easter.png");
 }
 
 #sm-banner{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+#banner3 h3:hover{
+    color: #e3f9a7;
 }
 
 #sm-banner h4{
@@ -390,8 +418,8 @@ div.fe-box  a:hover{
 }
 
 #sm-banner .banner-box:hover button{
-    background-color: #008178;
-    border: 1px solid #088178;
+    background-color: #1C94C8;
+    border: 1px solid #fff;
 }
 
 #banner3{
@@ -416,11 +444,11 @@ div.fe-box  a:hover{
 }
 
 #banner3 .banner-box2{
-    background-image: url(../img/banner/b4.jpg);
+    background-image: url(../img/LionsClub.jpg);
 }
 
 #banner3 .banner-box3{
-    background-image: url(../img/banner/b18.jpg);
+    background-image: url(../img/sportsClub.jpg);
 }
 
 #banner3 h2{
@@ -481,7 +509,7 @@ div.fe-box  a:hover{
 }
 
 #newsletter button{
-    background-color: #088178;
+    background-color: #1C94C8;
     color: #fff;
     white-space: nowrap;
     border-top-left-radius: 0;
@@ -551,11 +579,16 @@ footer .copyright{
     text-align: center;
 }
 
+/*womens Club Calendar*/
 
-/*shop page*/
+#womensCal{
+    padding-left: 22%;
+}
+
+/*Getting Settled page*/
 
 #page-header{
-    background-image: url(../img/banner/b1.jpg);
+    background-image: url(../img/banner/interior-AboutBanner.png);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -564,8 +597,13 @@ footer .copyright{
     text-align: center;
     flex-direction: column;
     padding: 14px;
-
 }
+
+#page-header .womens-club{
+    background-image: url(../img/banner/b1.jpg);
+}
+
+
 
 #page-header h2,
 #page-header p{
@@ -859,6 +897,7 @@ footer .copyright{
     height: 65px;
     object-fit: cover;
     margin-right: 15px;
+    border-radius: 50%;
 }
 
 #form-details .people div p{
